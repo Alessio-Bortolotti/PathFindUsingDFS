@@ -101,8 +101,10 @@ public class Maze extends JComponent {
 				g2.fillRect(j * this.blockSize, i * this.blockSize, this.blockSize, this.blockSize);
 
 				g2.setColor(Color.GREEN);
-				g2.drawString(this.nodesMatrix[i][j].getElement() + "", (j) * this.blockSize + this.blockSize / 2,
-						(i) * this.blockSize + this.blockSize / 2);
+//				g2.drawString(this.nodesMatrix[i][j].getElement() + "", (j) * this.blockSize + this.blockSize / 2,
+//						(i) * this.blockSize + this.blockSize / 2);
+				g2.drawString(this.nodesMatrix[i][j].getElement() + "", j *this.blockSize + this.blockSize/2 -10,
+						i * this.blockSize + this.blockSize/2);
 			}
 		}
 	}
